@@ -1,0 +1,566 @@
+/* universal design */
+html body{
+  font-size: 16px;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #722f37;
+  font-family: 'Anton', sans-serif;
+  text-decoration: underline;
+}
+h2 {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #4d0000;
+}
+h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #3d0101;
+}
+
+p{
+  font-size: 1rem;
+}
+
+
+/* header design */
+header {
+  width: 100%;
+  height: 4rem;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0px;
+}
+
+header a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.title {
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  padding: 1rem 0 1rem 0;
+}
+
+.title img {
+  height: 100%;
+  margin-left: 1.5rem;
+}
+
+
+.title span{
+  color: #4d0000;
+  font-size: 1.75rem;
+  font-weight: bold;
+  font-family: 'graduate',cursive;
+  letter-spacing: 0.2rem;
+}
+
+
+#academy{
+  opacity: 0.70;
+}
+
+/* Navigation */
+.menu{
+  color: #4d0000;
+  margin-right: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.menu li{
+  width: 100%;
+  display: inline;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-right: 1rem;
+}
+
+.menu li:hover {
+  text-decoration: underline;
+}
+
+.mobile-menu{
+  display: none;
+}
+
+@media only screen and (max-width: 775px) {
+  .title, .menu {
+    display: none;
+  }
+
+ .mobile-menu{
+      display: flex;
+      align-items: center;
+      height: 4rem;
+      width: 100%;
+      margin: 0 1.5rem;
+      justify-content: space-around;
+    }
+  }
+
+  /* Banner Design */
+
+.banner {
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  background-color: #d9d9d9;
+  width: 100%;
+  }
+
+.banner img{
+  width: 60%;
+  max-height: 100%;
+  margin: 2rem 1.5rem;
+}
+
+.banner_words {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 2rem 1.5rem 2rem 0;
+}
+
+.banner_words h1{
+  margin-bottom: 1rem;
+  line-height: 3.5rem;
+}
+
+.banner_words h2{
+  margin-bottom: 1rem;
+}
+
+.banner_words a{
+  width: 80%;
+  color: white;
+  background-color: #722f37;
+  text-decoration: none;
+  padding: 0.5rem;
+  text-align: center;
+  margin-top: 1.5rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 0.5rem 0.5rem grey;
+  transition: background-color 0.5s ease;
+}
+
+.banner_words a:hover{
+  background-color: #800000;
+}
+
+@media only screen and (max-width: 775px) {
+  .banner{
+    flex-direction: column;
+    align-items: center;
+  }
+  .banner img{
+    width:100%;
+    max-height: 100%;
+    margin: 0;
+  }
+
+  .banner_words{
+    text-align: left;
+    width: 90%;
+    height: 100%;
+    margin: 2rem 1rem;
+  }
+
+  .banner_words h1{
+    margin-bottom: 2rem;
+  }
+
+  .banner_words h2{
+    margin-bottom: 1.5rem;
+  }
+
+  .banner_words a{
+    margin:0;
+  }
+}
+
+/* information */
+
+.info_container{
+  display: flex;
+  align-items: flex-start;
+  height: auto;
+  margin: 2rem 0 2rem 1.5rem;
+}
+
+.info_image{
+  max-height: auto;
+  width: 60%;
+  padding-right: 1.5rem;
+}
+
+.info_image img{
+  width: 100%;
+  margin-bottom: 2rem;
+  }
+
+.info_image h1{
+  margin-bottom: 1.5rem;
+}
+
+.quote {
+  line-height: 1.7;
+  font-style: italic;
+  font-weight: bold;
+}
+
+#name {
+  font-weight: normal;
+}
+
+/* news section design */
+
+.news_container {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem 0 1rem;
+}
+
+.news {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.news img {
+  width: 35%;
+  height: auto;
+  padding: 1rem;
+}
+
+.news_info {
+  width: 65%;
+  padding: 1rem 0;
+  line-height: 1.5;
+}
+
+.news:hover {
+  width: 100%;
+  color: white;
+  background-color: #722f37;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  transition: background-color 0.5s ease;
+}
+
+.news_info h3 {
+  margin-bottom: 0.5rem;
+}
+
+.news_info p {
+  margin-bottom: 0.5rem;
+}
+
+.news_info a {
+  color: #4d0000;;
+  font-weight: bold;
+}
+
+.mobile_news_container{
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .information{
+    display: none;
+  }
+
+  .mobile_news_container {
+    display: block;
+    align-items: center;
+  }
+
+  .mobile_news {
+    max-width: 100%;
+    height: auto;
+    align-items: flex-start;
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .mobile_news img {
+    max-width: 100%;
+  }
+
+  .mobile_news_info {
+    max-width: 100%;
+    padding: 1rem;
+    line-height: 1.5;
+  }
+
+  .mobile_news:hover {
+    max-width: 100%;
+    color: white;
+    background-color: #722f37;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    transition: background-color 0.5s ease;
+  }
+
+  .news_info h3 {
+    margin-bottom: 0.5rem;
+  }
+
+  .news_info p {
+    margin-bottom: 0.5rem;
+  }
+
+  .news_info a {
+    color: #4d0000;;
+    font-weight: bold;
+  }
+
+}
+
+  /* Learning section */
+
+.learning {
+  background-color: #d9d9d9;
+  align-items: center;
+  padding: 2rem 2rem;
+  text-align: center;
+}
+
+.learning_container{
+  margin: 2rem 2.5rem;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.courses {
+  background-color: white;
+  line-height: 1.5rem;
+  text-align: left;
+  padding-bottom: 1.5rem;
+}
+
+.courses img{
+  max-width: 100%;
+  height: auto;
+}
+
+.courses h3 {
+  padding: 1rem 1rem 0.5rem 1rem;
+}
+
+.courses span {
+  padding: 0 1rem 0.5rem 1rem;
+  font-weight: bold;
+}
+
+.courses p {
+  padding: 0 1rem;
+  font-style: italic;
+}
+
+.mobile-learning{
+  display: none;
+}
+
+@media only screen and (max-width: 775px) {
+  .learning {
+    display: none;
+  }
+
+  .mobile-learning {
+    margin: 1rem;
+    display: block;
+    text-align: center;
+    align-items: center;
+  }
+
+  .mobile-learning h2{
+    text-decoration: underline;
+    font-family: 'Anton', sans-serif;
+    font-size: 2rem;
+  }
+
+  .learning-content{
+    padding: 1rem 0;
+  }
+
+
+  .learning-content h3 {
+    color: white;
+    background-color: #722f37;
+    padding: 1rem 1rem 1.5rem 1rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.25rem grey;
+    transition: background-color 0.5s ease;
+    margin-top: 0.5rem;
+ }
+
+ .learning-content h3:hover{
+    background-color: #800000;
+  }
+}
+
+  /* Thesis section */
+.thesis{
+  margin: 2rem 0;
+}
+
+.thesis h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.thesis_container {
+  display: flex;
+  align-items: flex-start;
+  height: auto;
+  padding: 1.5rem 0 0 1.5rem;
+}
+
+.video_container{
+  max-height: auto;
+  width: 60%;
+  margin-left: 1.5rem;
+}
+
+.video_container video{
+  width: 100%;
+  margin-bottom: 1.5rem;
+  }
+
+.video_container h3{
+  margin-bottom: 0.5rem;
+}
+
+.quote {
+  margin-bottom: 2rem;
+  line-height: 1.7;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.exhibit_container {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem 0 1rem;
+}
+
+.exhibits {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.exhibits img {
+  width: 35%;
+  height: auto;
+  padding: 1rem;
+}
+
+.exhibit_info {
+  width: 65%;
+  padding: 1rem 0;
+  line-height: 1.5;
+}
+
+.exhibits:hover {
+  width: 100%;
+  color: white;
+  background-color: #722f37;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  transition: background-color 0.5s ease;
+}
+
+.exhibit_info p {
+  font-size: 0.85rem;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+@media only screen and (max-width: 775px) {
+  .thesis{
+    margin: 2rem 0 1.5rem 0;
+  }
+  .thesis h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .thesis_container {
+    display: flex;
+    align-items:
+    height: auto;
+    padding: 0;
+  }
+
+  .video_container{
+    max-height: auto;
+    width: 100%;
+    margin: 0;
+  }
+
+  .video_container video{
+    width: 100%;
+    margin: 0;
+    }
+
+  .video_container h3{
+    display: none;
+  }
+
+  .quote {
+    display: none;
+  }
+
+
+  .exhibit_container{
+    display: none;
+  }
+
+}
+/* footer*/
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 1.5rem;
+}
+
+footer span{
+  color: #BEBEBE;
+}
+
+.terms a {
+  margin-left: 1rem;
+  color: #BEBEBE;
+  text-decoration: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .terms {
+    display: none;
+  }
+}
